@@ -2,7 +2,13 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import vuescroll from 'vuescroll'
 
+Vue.use(vuescroll, {
+  ops: {
+  },
+  name: 'vuescroll'
+})
 Vue.config.productionTip = false
 
 new Vue({
